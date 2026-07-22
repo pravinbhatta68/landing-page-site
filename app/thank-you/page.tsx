@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { CheckCircle2, MessageCircle, Play, Sparkles } from "lucide-react";
-import { Header } from "@/components/Header";
 
 export const metadata: Metadata = { title: "You're In! | Digital Pravin", robots: { index: false, follow: false } };
 
@@ -9,10 +8,7 @@ export default function ThankYou() {
     <main className="thank-page">
       <div className="aurora aurora-one" />
       <div className="aurora aurora-two" />
-      <Header />
       <section className="thank-hero container narrow center">
-        <div className="success-mark"><CheckCircle2 size={38} /></div>
-        <span className="section-kicker">Request received</span>
         <h1>🎉 You&apos;re In!</h1>
         <p className="thank-lead">Your Free AI Marketing Consultation Request Has Been Received.</p>
         <p>There&apos;s just one important step before your consultation.</p>
