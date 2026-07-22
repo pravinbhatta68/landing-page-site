@@ -1,12 +1,10 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { useRouter } from "next/navigation";
 
 type FieldErrors = Partial<Record<"name" | "email" | "whatsapp" | "business", string>>;
 
 export function CTAForm() {
-  const router = useRouter();
   const [errors, setErrors] = useState<FieldErrors>({});
   const [submitting, setSubmitting] = useState(false);
 
@@ -27,11 +25,22 @@ export function CTAForm() {
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length) return;
     setSubmitting(true);
-    window.setTimeout(() => router.push("/thank-you"), 650);
+    event.currentTarget.submit();
   }
 
   return (
-    <form className="lead-form" onSubmit={handleSubmit} noValidate>
+    <form
+      className="lead-form"
+      action="https://formsubmit.co/pravinbhatta68@gmail.com"
+      method="POST"
+      onSubmit={handleSubmit}
+      noValidate
+    >
+      <input type="hidden" name="_next" value="https://digital-pravin-ai-consultation.pravinbhatta69.chatgpt.site/thank-you" />
+      <input type="hidden" name="_subject" value="New AI Marketing Consultation Request" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="_honey" className="honeypot" tabIndex={-1} autoComplete="off" aria-hidden="true" />
       <div className="field-row">
         <Field label="Full Name" name="name" placeholder="Your full name" error={errors.name} required />
         <Field label="Active Email" name="email" type="email" placeholder="you@business.com" error={errors.email} required />

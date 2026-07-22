@@ -76,6 +76,7 @@ button,input,textarea { font:inherit; }
 .form-button { width:100%; }
 .form-button:disabled { opacity:.65; cursor:wait; }
 .privacy-note { margin:14px 0 0; text-align:center; color:#858da6; font-size:11px; }
+.honeypot { position:absolute!important; left:-10000px!important; width:1px!important; height:1px!important; opacity:0!important; pointer-events:none!important; }
 .thank-page { min-height:100vh; position:relative; overflow:hidden; background:radial-gradient(circle at 50% -8%,#251655,#090b18 45%); }
 .thank-page>* { position:relative; z-index:1; }
 .thank-hero { padding:75px 0 58px; }
