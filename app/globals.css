@@ -79,7 +79,7 @@ button,input,textarea { font:inherit; }
 .honeypot { position:absolute!important; left:-10000px!important; width:1px!important; height:1px!important; opacity:0!important; pointer-events:none!important; }
 .thank-page { min-height:100vh; position:relative; overflow:hidden; background:radial-gradient(circle at 50% -8%,#251655,#090b18 45%); }
 .thank-page>* { position:relative; z-index:1; }
-.thank-hero { padding:75px 0 58px; }
+.thank-hero { padding:28px 0 58px; }
 .success-mark { width:72px; height:72px; display:grid; place-items:center; margin:0 auto 24px; color:#6ee7b7; border-radius:50%; background:rgba(16,185,129,.12); border:1px solid rgba(110,231,183,.3); }
 .thank-hero h1 { margin:12px 0 10px; font-size:clamp(45px,7vw,76px); letter-spacing:-.05em; }
 .thank-lead { max-width:700px; margin:0 auto 12px; color:white; font-size:clamp(19px,3vw,24px); font-weight:750; }
@@ -134,7 +134,7 @@ button,input,textarea { font:inherit; }
   .benefit-card:last-child { grid-column:auto; }
   .lead-form { padding:21px; border-radius:20px; }
   .section h2,.thank-content h2,.whatsapp-card h2 { font-size:32px; }
-  .thank-hero { padding:58px 0 38px; }
+  .thank-hero { padding:24px 0 38px; }
   .thank-content { width:calc(100% - 28px); padding:22px; gap:32px; }
   .whatsapp-card { padding:38px 22px; }
   .whatsapp-button { width:100%; }
