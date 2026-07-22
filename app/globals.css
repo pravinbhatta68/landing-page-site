@@ -15,6 +15,7 @@ button,input,textarea { font:inherit; }
 .aurora-one { background:var(--violet); top:70px; left:-250px; }
 .aurora-two { background:var(--cyan); top:120px; right:-280px; }
 .site-header { height:92px; display:flex; align-items:center; justify-content:center; position:relative; z-index:3; border-bottom:1px solid rgba(255,255,255,.07); }
+.header-logo { width:126px; height:84px; object-fit:contain; display:block; }
 .wordmark { display:inline-flex; align-items:center; gap:11px; font-size:14px; font-weight:700; letter-spacing:.14em; }
 .wordmark b { color:#b59aff; font-weight:800; }
 .wordmark-mark { display:grid; place-items:center; width:34px; height:34px; border-radius:10px; color:white; letter-spacing:-.06em; font-size:12px; background:linear-gradient(135deg,var(--violet),#6d4aff 50%,var(--cyan)); box-shadow:0 8px 28px rgba(139,92,246,.35); }
@@ -126,6 +127,7 @@ button,input,textarea { font:inherit; }
 @media (max-width:520px) {
   .container { width:min(100% - 28px,1120px); }
   .site-header { height:76px; }
+  .header-logo { width:102px; height:68px; }
   .hero { padding:62px 0 68px; }
   .hero h1 { font-size:clamp(38px,11.5vw,54px); }
   .primary-button { width:100%; }

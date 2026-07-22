@@ -1,10 +1,16 @@
+import Image from "next/image";
+
 export function Header() {
   return (
     <header className="site-header">
-      <div className="wordmark" aria-label="Digital Pravin home">
-        <span className="wordmark-mark">DP</span>
-        <span>DIGITAL <b>PRAVIN</b></span>
-      </div>
+      <Image
+        className="header-logo"
+        src="/landing page logo.png"
+        alt="Aesthetic Pravin"
+        width={126}
+        height={84}
+        priority
+      />
     </header>
   );
 }
